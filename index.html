@@ -8,67 +8,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">FunZic</div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Категории</a></li>
-                <li><a href="#">Донат</a></li>
-                <li><a href="#">Поддержка</a></li>
-            </ul>
-        </nav>
-        <div class="auth">
-            <button id="google-auth">Войти через Google</button>
-            <button id="vk-auth">Войти через ВКонтакте</button>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h1>Войти</h1>
+            <h1>Зарегистрироваться</h1>
+
+            <div class="social-buttons">
+                <button class="social-button">Войти через ВКонтакте</button>
+            </div>
+
+            <div class="divider">
+                <span>Или с помощью имени, почты и пароля:</span>
+            </div>
+
+            <form>
+                <div class="input-group">
+                    <label for="username">Имя или ник</label>
+                    <input type="text" id="username" placeholder="Латинские буквы и цифры" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" placeholder="Требуется для активации учетной записи" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Минимум 6 символов" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">С пользовательским соглашением, правилами сайта ознакомился, принимаю в полном объеме</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="not-robot" required>
+                    <label for="not-robot">Я не робот</label>
+                </div>
+
+                <button type="submit" class="submit-button">Зарегистрироваться</button>
+            </form>
         </div>
-    </header>
 
-    <main>
-        <section class="categories">
-            <h2>Категории</h2>
-            <div class="grid-container">
-                <div class="category-card">
-                    <h3>Аккаунты</h3>
-                    <p>Покупка и продажа аккаунтов</p>
-                </div>
-                <div class="category-card">
-                    <h3>Донат</h3>
-                    <p>Пополнение игровой валюты</p>
-                </div>
-                <div class="category-card">
-                    <h3>Услуги</h3>
-                    <p>Буст, обучение, гайды</p>
-                </div>
-                <div class="category-card">
-                    <h3>Прочее</h3>
-                    <p>Дополнительные услуги</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="popular-games">
-            <h2>Популярные игры</h2>
-            <div class="grid-container">
-                <div class="game-card">
-                    <h3>PUBG Mobile</h3>
-                    <p>Аккаунты, UC, Донат</p>
-                </div>
-                <div class="game-card">
-                    <h3>AFK Arena</h3>
-                    <p>Алмазы, гайды, услуги</p>
-                </div>
-                <div class="game-card">
-                    <h3>Albion Online</h3>
-                    <p>Серебро, золото, предметы</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 FunZic. Все права защищены.</p>
-    </footer>
+        <footer>
+            <p>© 2015–2025 FunZic</p>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Политика cookie</a>
+            <a href="#">Отправить запрос</a>
+        </footer>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
