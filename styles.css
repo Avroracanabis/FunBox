@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">FunZic ⚡</div>
         <input type="text" placeholder="Поиск товаров..." class="search-bar">
         <div class="profile-menu">
@@ -19,22 +19,32 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="rules">
-            <h2>❗ Правила FunZic</h2>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Поддержка</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <aside class="sidebar">
+            <h3>Категории</h3>
             <ul>
-                <li>⛔ Нажимать «Я выполнил» до того, как покупатель получит товар.</li>
-                <li>⛔ Вести переписку за пределами FunZic.</li>
-                <li>⛔ Запрашивать оплату на прямые реквизиты.</li>
-                <li>⛔ Не разглашайте данные, связанные с вашим профилем FunZic.</li>
+                <li><a href="#">CS:GO</a></li>
+                <li><a href="#">Dota 2</a></li>
+                <li><a href="#">GTA 5</a></li>
+                <li><a href="#">PUBG</a></li>
+                <li><a href="#">Fortnite</a></li>
             </ul>
-        </section>
+        </aside>
         <section class="products">
             <h2>Товары</h2>
-            <!-- Здесь будет список товаров -->
+            <div class="product-list">
+                <!-- Здесь будет список товаров -->
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <button class="footer-btn sell">Продать</button>
         <button class="footer-btn chat">Чат</button>
         <button class="footer-btn profile">Профиль</button>
