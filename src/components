@@ -1,0 +1,12 @@
+import React from "react";
+
+const FunZicHome = () => {
+  return (
+    <div style={{ textAlign: "center", padding: "20px", color: "#fff", backgroundColor: "#6a0dad" }}>
+      <h1>Добро пожаловать в FunZic!</h1>
+      <p>Платформа для покупки и продажи игровых товаров.</p>
+    </div>
+  );
+};
+
+export default FunZicHome;
