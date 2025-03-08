@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzic ⚡ - Маркетплейс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Funzic ⚡</h1>
+        <input type="text" id="search" placeholder="Поиск товаров...">
+    </header>
+
+    <main>
+        <section id="rules">
+            <h2>❗️ Правила Funzic</h2>
+            <p>⛔ Нажимать «Я выполнил» до того, как покупатель получит товар.</p>
+            <p>⛔ Вести переписку за пределами Funzic.</p>
+            <p>⛔ Запрашивать оплату на прямые реквизиты.</p>
+            <p>⛔ Не разглашайте данные, связанные с вашим профилем Funzic.</p>
+        </section>
+
+        <section id="marketplace">
+            <h2>Товары</h2>
+            <div id="products"></div>
+        </section>
+
+        <section id="admin" class="hidden">
+            <h2>Администрирование</h2>
+            <input type="text" id="product-name" placeholder="Название товара">
+            <input type="text" id="product-category" placeholder="Категория">
+            <input type="text" id="product-price" placeholder="Цена">
+            <button onclick="addProduct()">Добавить товар</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
