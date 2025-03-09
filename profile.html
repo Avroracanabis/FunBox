@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - FunZic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FunZic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</а></ли>
+                    <ли><а href="about.html">О нас</а></ли>
+                    <ли><а href="services.html">Услуги</а></ли>
+                    <ли><а href="transactions.html">История операций</а></ли>
+                    <ли><а href="profile.html">Профиль</а></ли>
+                    <ли><а href="settings.html">Настройки</а></ли>
+                    <ли><а href="ratings.html">Рейтинг продавца</а></ли>
+                    <ли><а href="balance.html">Пополнить баланс</а></ли>
+                    <ли><а href="promo.html">Промокоды и бонусы</а></ли>
+                    <ли><а href="support.html">Чат с поддержкой</а></ли>
+                    <ли><а href="exchange.html">Обмен/Продажа</а></ли>
+                    <ли><а href="recommendations.html">Рекомендации</а></ли>
+                    <ли><а href="newsletter.html">Подписка на новости</а></ли>
+                    <ли><а href="info.html">Информация о сервисе</а></ли>
+                </ул>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Профиль</h2>
+                <п>Здесь вы можете просмотреть и редактировать свою личную информацию, такую как имя, аватар и контактные данные.</п>
+                <form id="profile-form">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" value="FunZic" required>
+                    
+                    <label for="avatar">Аватар:</label>
+                    <input type="file" id="avatar" name="avatar">
+                    
+                    <label for="email">Эл. почта:</label>
+                    <input type="email" id="email" name="email" value="funzic@example.com" required>
+                    
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" value="+1234567890" required>
+                    
+                    <label for="role">Роль:</label>
+                    <select id="role" name="role">
+                        <option value="admin">Админ</option>
+                        <option value="moderator">Модератор</option>
+                        <option value="user">Пользователь</option>
+                    </select>
+                    
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <п>&copy; 2025 FunZic. Все права защищены.</п>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
