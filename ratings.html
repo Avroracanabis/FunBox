@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинг продавца - FunZic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FunZic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</а></ли>
+                    <ли><а href="reviews.html">Отзывы сайта</а></ли>
+                    <ли><а href="services.html">Услуги</а></ли>
+                    <ли><а href="transactions.html">История операций</а></ли>
+                    <ли><а href="profile.html">Профиль</а></ли>
+                    <ли><а href="settings.html">Настройки</а></ли>
+                    <ли><а href="ratings.html">Рейтинг продавца</а></ли>
+                    <ли><а href="balance.html">Пополнить баланс</а></ли>
+                    <ли><а href="promo.html">Промокоды и бонусы</а></ли>
+                    <ли><а href="catalog.html">Каталог товаров</а></ли>
+                    <ли><а href="sell.html">Продать</а></ли>
+                    <ли><а href="support.html">Чат с поддержкой</а></ли>
+                    <ли><а href="exchange.html">Обмен/Продажа</а></ли>
+                    <ли><а href="recommendations.html">Рекомендации</а></ли>
+                    <ли><а href="newsletter.html">Подписка на новости</а></ли>
+                    <ли><а href="info.html">Информация о сервисе</а></ли>
+                    <ли><input type="text" id="search" placeholder="Поиск..."></ли>
+                </ул>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Рейтинг продавца</h2>
+                <div id="seller-ratings">
+                    <!-- Здесь будут отображаться отзывы продавцов -->
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <h2>Оставить отзыв</h2>
+                <form id="rating-form">
+                    <label for="seller-name">Имя продавца:</label>
+                    <input type="text" id="seller-name" name="seller-name" required>
+                    
+                    <label for="rating">Оценка:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 звезд</option>
+                        <option value="4">4 звезды</option>
+                        <option value="3">3 звезды</option>
+                        <option value="2">2 звезды</option>
+                        <option value="1">1 звезда</option>
+                    </select>
+                    
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                    
+                    <button type="submit">Оставить отзыв</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <п>&copy; 2025 FunZic. Все права защищены.</п>
+        </div>
+    </footer>
+</body>
+</html>
