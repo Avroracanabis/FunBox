@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пополнить баланс - FunZic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FunZic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</а></ли>
+                    <ли><а href="about.html">О нас</а></ли>
+                    <ли><а href="services.html">Услуги</а></ли>
+                    <ли><а href="transactions.html">История операций</а></ли>
+                    <ли><а href="profile.html">Профиль</а></ли>
+                    <ли><а href="settings.html">Настройки</а></ли>
+                    <ли><а href="ratings.html">Рейтинг продавца</а></ли>
+                    <ли><а href="balance.html">Пополнить баланс</а></ли>
+                    <ли><а href="promo.html">Промокоды и бонусы</а></ли>
+                    <ли><а href="support.html">Чат с поддержкой</а></ли>
+                    <ли><а href="exchange.html">Обмен/Продажа</а></ли>
+                    <ли><а href="recommendations.html">Рекомендации</а></ли>
+                    <ли><а href="newsletter.html">Подписка на новости</а></ли>
+                    <ли><а href="info.html">Информация о сервисе</а></ли>
+                </ул>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Пополнить баланс</h2>
+                <п>Здесь вы можете добавить средства на свой аккаунт, используя различные методы оплаты.</п>
+                <form id="balance-form">
+                    <label for="amount">Сумма:</label>
+                    <input type="number" id="amount" name="amount" required>
+                    
+                    <label for="payment-method">Метод оплаты:</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="credit-card">Банковская карта</option>
+                        <option value="e-wallet">Электронный кошелек</option>
+                        <option value="bank-transfer">Банковский перевод</option>
+                    </select>
+                    
+                    <button type="submit">Пополнить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <п>&copy; 2025 FunZic. Все права защищены.</п>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
